@@ -36,4 +36,9 @@ RUN apk add --update g++ \
     make install && \
     cd / && \
     rm -rf GraphicsMagick-$PKGVER && \
-    rm GraphicsMagick-$PKGVER.tar.lz
+    rm GraphicsMagick-$PKGVER.tar.lz && \
+    apk del g++ \
+                gcc \
+                make \
+                lzip \
+                wget
