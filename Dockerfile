@@ -1,4 +1,4 @@
-FROM node:boron-alpine
+FROM node:carbon-alpine
 
 ENV PKGNAME=graphicsmagick
 ENV PKGVER=1.3.25
